@@ -11,4 +11,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+bindkey '^[[1;5C' forward-word                        # [Ctrl-RightArrow] - move forward one word
+bindkey '^[[1;5D' backward-word                       # [Ctrl-LeftArrow] - move backward one word
 
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Workspace
+source /usr/bin/virtualenvwrapper.sh
